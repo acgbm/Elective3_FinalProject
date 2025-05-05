@@ -196,7 +196,7 @@ Content-Type: application/json
 
 ### 1. Clone and Install
 ```bash
-git clone https://github.com/acgbm/manalo_activities_BSIT3C.git
+git clone https://github.com/acgbm/Elective3_FinalProject.git
 cd staff-mgmt
 pip install -r requirements.txt
 ```
