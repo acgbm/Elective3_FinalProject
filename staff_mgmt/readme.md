@@ -196,8 +196,8 @@ Content-Type: application/json
 
 ### 1. Clone and Install
 ```bash
-git clone https://github.com/yourusername/staff-management-system.git
-cd staff-management-system
+git clone https://github.com/acgbm/manalo_activities_BSIT3C.git
+cd staff-mgmt
 pip install -r requirements.txt
 ```
 
