@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'accounts',
     'management',
     'ratelimitapp',
+    'fileupload',
 ]
 
 MIDDLEWARE = [
@@ -100,6 +101,10 @@ CACHES = {
         "LOCATION": "rate-limit-cache"
     }
 }
+
+AUTH_USER_MODEL = 'fileupload.CustomUser'
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / 'media'
 
 
 
