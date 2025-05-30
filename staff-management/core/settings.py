@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'rest_framework_simplejwt',
     'accounts',
     'management',
+    'ratelimitapp',
 ]
 
 MIDDLEWARE = [
@@ -92,6 +93,14 @@ REST_FRAMEWORK = {
         'rest_framework_simplejwt.authentication.JWTAuthentication',
     )
 }
+
+CACHES = {
+    "default": {
+        "BACKEND": "django.core.cache.backends.locmem.LocMemCache",
+        "LOCATION": "rate-limit-cache"
+    }
+}
+
 
 
 
